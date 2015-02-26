@@ -13,7 +13,7 @@
  * Advertise the current views api version
  */
 function views_api_version() {
-  return '3.0';
+  return '3.2';
 }
 
 /**
@@ -28,6 +28,8 @@ function views_forms($form_id, $args) {
   if (strpos($form_id, 'views_form_') === 0) {
     return array(
       $form_id => array(
+        'callback' => 'views_form',
+        'callback' => 'views_form',
         'callback' => 'views_form',
       ),
     );
