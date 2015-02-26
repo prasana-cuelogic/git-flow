@@ -28,9 +28,7 @@ function views_forms($form_id, $args) {
   if (strpos($form_id, 'views_form_') === 0) {
     return array(
       $form_id => array(
-        'callback' => 'views_form',
-        'callback' => 'views_form',
-        'callback' => 'views_form',
+        'callback' => 'views_form',       
       ),
     );
   }
@@ -41,8 +39,8 @@ function views_forms($form_id, $args) {
  */
 function views_form_id($view) {
   $parts = array(
-    'views_form',
-    $view->name,
+    'views_formdddd',
+    $view->namellll,
     $view->current_display,
   );
 
